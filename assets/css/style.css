@@ -331,6 +331,44 @@ section {
     max-width: 80%;
 }
 
+/*ABOUT US SECTION*/
+
+
+.aboutus-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.top-aboutus,
+.bottom-aboutus {
+    flex-direction: column;
+}
+
+.top-aboutus>h3 {
+    font-size: 1.8rem;
+    color: var(--planning-section-color);
+}
+
+.top-aboutus>p {
+    max-width: 80%;
+}
+
+.bottom-aboutus>img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.bottom-aboutus>p {
+    color: var(--planning-section-color);
+    font-size: 1.2rem;
+    max-width: 80%;
+}
+
+.bottom-aboutus>a {
+    background-color: var(--planning-section-color);
+    width: 50%;
+    color: var(--lighter-color);
+}
 
 /************************************
 
@@ -389,8 +427,11 @@ section {
         gap: 0;
         padding: 0 3rem;
         flex-direction: row;
+    }
 
-
+    .aboutus-content {
+        gap: 0;
+        flex-direction: row;
     }
 }
 
@@ -490,4 +531,7 @@ section {
         gap: 2rem;
     }
 
+    .aboutus-content {
+        margin: auto;
+    }
 }
