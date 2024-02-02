@@ -128,6 +128,7 @@ section {
     flex-wrap: wrap;
     font-size: 1.5rem;
     line-height: 3rem;
+    flex-direction: column;
 }
 
 .l-card {
@@ -139,13 +140,22 @@ section {
     color: var(--demo-logo-button-color);
 }
 
+.l-card>p,
+.card-content>p {
+    width: 50%;
+}
+
+.card-content>p {
+    margin: auto;
+}
+
 .l-card>a {
-    color: white;
+    color: var(--lighter-color);
     background-color: var(--demo-logo-button-color);
     width: 60%;
     text-align: center;
     letter-spacing: 0.5rem;
-    align-self: center;
+    justify-self: center;
 }
 
 .l-card>img {
@@ -163,7 +173,7 @@ section {
 }
 
 .card-content>i {
-    font-size: 200px;
+    font-size: 150px;
     color: var(--demo-logo-button-color);
 }
 
@@ -176,7 +186,8 @@ section {
     flex-direction: column;
     flex-wrap: wrap;
     color: var(--lighter-color);
-    font-size: 2rem;
+    font-size: 1.5rem;
+    width: 100%;
 }
 
 .plans-content>img {
@@ -205,6 +216,7 @@ section {
     color: var(--dark-color);
 }
 
+
 .top-plans-card {
     width: 50%;
 }
@@ -231,7 +243,43 @@ section {
     width: 50px;
 }
 
+/*TESTIMONIALS SECTION*/
+.testimonials-content {
+    text-align: center;
+    flex-direction: column;
+}
 
+.testimonials-content>h2 {
+    color: var(--planning-section-color);
+}
+
+.testimonials-card {
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--planning-section-color);
+    border-radius: 50px;
+    color: var(--lighter-color);
+    line-height: 20px;
+}
+
+.testimonials-card .top-plans-card {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+
+.testimonials-card .top-plans-card img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.testimonials-card .bottom-plans-card span {
+    font-size: 2rem;
+
+}
 
 
 /************************************
@@ -241,7 +289,7 @@ section {
 ************************************/
 
 
-@media screen and (min-width:992px) {
+@media screen and (min-width:768px) {
     .col-md-1 {
         width: calc((100% / 12)*1);
     }
@@ -266,7 +314,32 @@ section {
         width: 100%
     }
 
+    @media screen and (min-width:992px) {
+        .col-ml-1 {
+            width: calc((100% / 12)*1);
+        }
 
+        .col-ml-2 {
+            width: calc((100% / 12)*2);
+        }
+
+        .col-ml-4 {
+            width: calc((100% / 12)*4);
+        }
+
+        .col-ml-6 {
+            width: 50%
+        }
+
+        .col-ml-8 {
+            width: calc((100% / 12)*8);
+        }
+
+        .col-ml-12 {
+            width: 100%
+        }
+
+    }
 
 }
 
@@ -323,10 +396,7 @@ section {
     }
 
     .row {
-        max-width: 1200px;
         margin: auto;
     }
-
-
 
 }
