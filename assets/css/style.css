@@ -191,7 +191,7 @@ section {
     width: 100%;
 }
 
-.plans-content>img {
+.plans-content>.top-plans img {
     width: 100%;
 }
 
@@ -474,4 +474,12 @@ section {
         max-width: 1200px;
         margin: auto;
     }
+
+    .plans-content {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        gap: 2rem;
+    }
+
 }
