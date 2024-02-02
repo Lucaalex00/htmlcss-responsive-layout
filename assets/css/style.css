@@ -73,6 +73,10 @@ section {
     margin: 100px 0;
 }
 
+.p1 {
+    padding: 1rem;
+}
+
 .p2 {
     padding: 2rem;
 }
@@ -118,6 +122,7 @@ section {
 .row {
     flex-wrap: wrap;
     justify-content: center;
+
 }
 
 .l-card,
@@ -126,9 +131,10 @@ section {
     box-shadow: 0px 10px var(--light-color);
     border-radius: 50px;
     flex-wrap: wrap;
-    font-size: 1.5rem;
-    line-height: 3rem;
+    font-size: 1rem;
+    line-height: 1.3rem;
     flex-direction: column;
+
 }
 
 .l-card {
@@ -138,11 +144,6 @@ section {
 .l-card>h2,
 .card-content>h2 {
     color: var(--demo-logo-button-color);
-}
-
-.l-card>p,
-.card-content>p {
-    width: 50%;
 }
 
 .card-content>p {
@@ -251,6 +252,7 @@ section {
 
 .testimonials-content>h2 {
     color: var(--planning-section-color);
+    font-size: 3rem;
 }
 
 .testimonials-card {
@@ -264,9 +266,7 @@ section {
 
 .testimonials-card .top-plans-card {
     width: 100%;
-    height: 100%;
     align-items: center;
-
 }
 
 .testimonials-card .top-plans-card img {
@@ -281,6 +281,56 @@ section {
 
 }
 
+/*BENEFIT SECTION*/
+.benefit-c {
+    background-color: var(--planning-section-color);
+}
+
+.benefit-content {
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.benefit-content>h2 {
+    color: var(--lighter-color);
+    font-size: 2rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.benefit-card {
+    background-color: var(--lighter-color);
+    border-radius: 100px;
+    line-height: 30px;
+    color: var(--dark-color);
+    flex-direction: column;
+    padding: 5rem 1rem;
+
+}
+
+.benefit-card .benefit-number-card,
+.benefit-card>h3 {
+    color: var(--planning-section-color);
+    align-self: flex-start;
+}
+
+.benefit-number-card {
+    font-size: 4rem;
+}
+
+.benefit-card>a {
+    background-color: var(--planning-section-color);
+    width: 30%;
+    text-align: center;
+    color: var(--lighter-color);
+    letter-spacing: 5px;
+}
+
+.benefit-card>p {
+    max-width: 80%;
+}
+
 
 /************************************
 
@@ -290,6 +340,7 @@ section {
 
 
 @media screen and (min-width:768px) {
+
     .col-md-1 {
         width: calc((100% / 12)*1);
     }
@@ -314,34 +365,54 @@ section {
         width: 100%
     }
 
-    @media screen and (min-width:992px) {
-        .col-ml-1 {
-            width: calc((100% / 12)*1);
-        }
+    .l-card,
+    .card {
+        height: 100%;
+    }
 
-        .col-ml-2 {
-            width: calc((100% / 12)*2);
-        }
+    .row {
+        gap: 0;
+    }
 
-        .col-ml-4 {
-            width: calc((100% / 12)*4);
-        }
+    .testimonials-card {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 5px;
+    }
 
-        .col-ml-6 {
-            width: 50%
-        }
+    .card-content>i {
+        font-size: 100px;
+        text-align: center;
+    }
+}
 
-        .col-ml-8 {
-            width: calc((100% / 12)*8);
-        }
+@media screen and (min-width:992px) {
+    .col-ml-1 {
+        width: calc((100% / 12)*1);
+    }
 
-        .col-ml-12 {
-            width: 100%
-        }
+    .col-ml-2 {
+        width: calc((100% / 12)*2);
+    }
 
+    .col-ml-4 {
+        width: calc((100% / 12)*4);
+    }
+
+    .col-ml-6 {
+        width: 50%
+    }
+
+    .col-ml-8 {
+        width: calc((100% / 12)*8);
+    }
+
+    .col-ml-12 {
+        width: 100%
     }
 
 }
+
 
 @media screen and (min-width:1200px) {
     .col-lg-1 {
@@ -399,4 +470,8 @@ section {
         margin: auto;
     }
 
+    .testimonials-c {
+        max-width: 1200px;
+        margin: auto;
+    }
 }
